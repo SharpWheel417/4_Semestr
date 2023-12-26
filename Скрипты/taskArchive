@@ -1,0 +1,7 @@
+current_date=$(date +"%Y-%m-%d")
+filename="_${current_date}.txt"
+echo $filename
+
+
+tar -cvf ./backup/folder$filename.tar ./folder
+NUM=NUM+1

@@ -1,0 +1,7 @@
+current_date=$(date +"%Y-%m-%d")
+mydate="${current_date}"
+
+cp -r ./folder ./folder2           #Копирует папку folder в folder2
+cp -r ./folder ./backup/back$mydate   #Сохраняет папку folder в бэкап
+rm -r ./folder                     #Удаляет папку folder 
+mv ./folder2 ./folder              #Переименовывает папку folder2 в folder

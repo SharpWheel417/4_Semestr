@@ -1,0 +1,15 @@
+
+
+# Укажите значения для вашей конкретной ситуации
+
+CONTAINER_ID="de7de7862f14"   #id контейнера Docker, можно найти по комманде <docker ps>
+DB_USER="admin"               #Юзер бд
+DB_PASSWORD="admin"	      #Пароль для бд	
+DB_NAME="labor_protected"     #Название БД
+DUMP_FILE="dump.sql"	      #Файл в который происходит запись
+
+# Создаем дамп базы данных
+docker exec -t $CONTAINER_ID pg_dump -U $DB_USER -d $DB_NAME > $DUMP_FILE
+
+# Копируем дамп на компьютер
+scp $DUMP_FILE /Users/gleb/Desktop
