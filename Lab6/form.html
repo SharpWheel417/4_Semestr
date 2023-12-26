@@ -1,0 +1,133 @@
+<form style="width:max-content" action="PHPForm.php" method="post">
+<body style="width: 70%;" class="d-flex col">
+
+    <div>
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Имя</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Введите">
+        </div>
+
+        <div class="form-group d-flex col center">
+            <label for="lastName" class="center">Фамилия</label>
+            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Введите">
+        </div>
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Место рождения</label>
+            <input type="text" id="palce" name="place" class="form-control" placeholder="Введите">
+        </div>
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Почтовый индекс</label>
+            <input type="text" id="postIndex" name="postIndex" class="form-control" placeholder="Введите">
+        </div>
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Телефон</label>
+            <input type="text" id="number" name="number" class="form-control" placeholder="Введите">
+        </div>
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Дата рождения</label>
+            <input type="text" id="birthday" name="birthday" class="form-control" placeholder="Введите">
+        </div>
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Пол</label>
+            <div class="form-check">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sex" id="sexMan" value="Мужской">
+                    <label class="form-check-label" for="">
+                        Мужской
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sex" id="sexWoman" value="Женский">
+                    <label class="form-check-label" for="">
+                        Женский
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">E-mail</label>
+            <input type="text" id="email" name="email" class="form-control" placeholder="Введите">
+        </div>
+
+    </div>
+    <div>
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Пароль</label>
+            <input type="text" id="password" name="password" class="form-control" placeholder="Введите">
+        </div>
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Подтверждение пароля</label>
+            <input type="text" id="checkPassword" name="checkPassword" class="form-control" placeholder="Введите">
+        </div>
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Секретный вопрос</label>
+            <select name="secretQuestion">
+                <option value="Имя питомца">Имя питомца</option>
+                <option value="Девичья фамилия матери">Девичья фамилия матери</option>
+                <option value="Имя лучшего друга">Имя лучшего друга</option>
+                <!-- Добавьте остальные часовые пояса по вашему усмотрению -->
+              </select>
+        </div>
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Ответ на секретный вопрос</label>
+            <input type="text" id="secretAnswer" name="secretAnswer" class="form-control" placeholder="Введите">
+        </div>
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Часвовой пояс</label>
+        <select name="timezone">
+            <option value="(GMT+02:00) Калининградское время">(GMT+02:00) Калининградское время</option>
+            <option value="(GMT+03:00) Московское время">(GMT+03:00) Московское время</option>
+            <option value="(GMT+05:00) Екатеринбургское время">(GMT+05:00) Екатеринбургское время</option>
+            <!-- Добавьте остальные часовые пояса по вашему усмотрению -->
+          </select>
+        </div>
+
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Получать уведомления о проведении операции</label>
+            <input class="form-check-input" type="checkbox" value="Да" id="alarmOperation" name="alarmOperation">
+        </div>
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Получать новости</label>
+            <input class="form-check-input" type="checkbox" value="Да" id="alarmNews" name="alarmNews">
+        </div>
+        <div class="form-group d-flex col center">
+            <label for="name" class="center">Я принимаю <a href="https://www.youtube.com/watch?v=8Vb-RRayWhc">условия
+                    сервиса</a></label>
+            <input class="form-check-input" type="checkbox" value="Да" id="submitUs" name="submitUs">
+        </div>
+
+    </div>
+
+    <div style="width: 10%;" class="center">
+
+        <button type="submit" class="btn btn-primary">Регистрация</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</form>
+
+<style>
+    .center {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin: 10pt;
+        width: 70%;
+    }
+</style>
